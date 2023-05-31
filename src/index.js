@@ -56,7 +56,7 @@ res.end()
         let movies = masVotadas.listarPelis();
         movies.forEach(function(movie){
             res.write('\n')
-            res.write(movie.title + 'Rating:' + movie.vote_average)
+            res.write(movie.title + 'Rating: ' + movie.vote_average)
             res.write('\n')
             res.write(movie.overview)
             res.write('\n')
